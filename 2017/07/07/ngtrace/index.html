@@ -49,17 +49,12 @@
   
 
   
-    
-    
-  
 
   
 
   
 
   
-    
-      
     
 
     
@@ -70,7 +65,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lobster Two:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -83,7 +78,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python," />
 
 
 
@@ -99,16 +94,17 @@
 
 
 
-<meta name="description" content="前言：1、ngtrace是利用现在非常流行的编程语言Python实现的。2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。">
+<meta name="description" content="前言：1、ngtrace是利用现在非常流行的编程语言Python实现的。2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。 ngtrace的功能简要说明：1、查看ngtrace使用帮助（">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ngtrace的使用说明">
 <meta property="og:url" content="http://yoursite.com/2017/07/07/ngtrace/index.html">
 <meta property="og:site_name" content="Mr.ShenHua">
-<meta property="og:description" content="前言：1、ngtrace是利用现在非常流行的编程语言Python实现的。2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。">
-<meta property="og:updated_time" content="2017-07-09T09:14:05.963Z">
+<meta property="og:description" content="前言：1、ngtrace是利用现在非常流行的编程语言Python实现的。2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。 ngtrace的功能简要说明：1、查看ngtrace使用帮助（">
+<meta property="og:updated_time" content="2017-07-10T12:08:09.484Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ngtrace的使用说明">
-<meta name="twitter:description" content="前言：1、ngtrace是利用现在非常流行的编程语言Python实现的。2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。">
+<meta name="twitter:description" content="前言：1、ngtrace是利用现在非常流行的编程语言Python实现的。2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。 ngtrace的功能简要说明：1、查看ngtrace使用帮助（">
 
 
 
@@ -357,7 +353,7 @@
       
 
       
-        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>1、ngtrace是利用现在非常流行的编程语言Python实现的。<br>2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。<br>3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。<br><a id="more"></a></p>
+        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>1、ngtrace是利用现在非常流行的编程语言Python实现的。<br>2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。<br>3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比我们之前使用的跟用户方法稍微快一点。</p>
 <h2 id="ngtrace的功能简要说明："><a href="#ngtrace的功能简要说明：" class="headerlink" title="ngtrace的功能简要说明："></a>ngtrace的功能简要说明：</h2><h3 id="1、查看ngtrace使用帮助（可以看到一些参数的含义）："><a href="#1、查看ngtrace使用帮助（可以看到一些参数的含义）：" class="headerlink" title="1、查看ngtrace使用帮助（可以看到一些参数的含义）："></a>1、查看ngtrace使用帮助（可以看到一些参数的含义）：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">[NSNCYF@CLA-0(TYSAEGW44BNK) /home/ngtools]</div><div class="line"><span class="comment"># ngtrace -h</span></div><div class="line">Print NG Trace <span class="keyword">in</span> a easy and tidy way.</div><div class="line">      ngtrace                              <span class="comment">#print ngtrace briefly</span></div><div class="line">      ngtrace -f(--found) &lt;msisdn&gt;         <span class="comment">#print msisdn infomation</span></div><div class="line">      ngtrace -a(--add) &lt;imsi&gt;             <span class="comment">#add imsi trace</span></div><div class="line">      ngtrace -d(--delete) &lt;imsi&gt;          <span class="comment">#delete imsi trace</span></div><div class="line">      ngtrace -h(--<span class="built_in">help</span>)                   <span class="comment">#for help</span></div><div class="line">Created by Liushenhua SX-PS-CORE</div><div class="line">[NSNCYF@CLA-0(TYSAEGW44BNK) /home/ngtools]</div></pre></td></tr></table></figure>
 <h3 id="2、查看当前用户的抓包情况："><a href="#2、查看当前用户的抓包情况：" class="headerlink" title="2、查看当前用户的抓包情况："></a>2、查看当前用户的抓包情况：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">[NSNCYF@CLA-0(TYSAEGW44BNK) /home/NSNCYF]</div><div class="line"><span class="comment"># ngtrace </span></div><div class="line">----------------------------------------------------------------------------------------------------------------</div><div class="line">imsi                           gather-logs          gather-events        gather-user          gather-signalling   </div><div class="line">----------------------------------------------------------------------------------------------------------------</div><div class="line">460021357329236                enabled              enabled              disabled             enabled             </div><div class="line">460024343413800                disabled             disabled             disabled             enabled             </div><div class="line">460003662563075                disabled             disabled             disabled             disabled            </div><div class="line">460022345873155                disabled             disabled             disabled             disabled            </div><div class="line">----------------------------------------------------------------------------------------------------------------</div><div class="line">[NSNCYF@CLA-0(TYSAEGW44BNK) /home/NSNCYF]</div></pre></td></tr></table></figure>
 <h3 id="3、查看某个用户在设备上的信息："><a href="#3、查看某个用户在设备上的信息：" class="headerlink" title="3、查看某个用户在设备上的信息："></a>3、查看某个用户在设备上的信息：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">[NSNCYF@CLA-0(TYSAEGW44BNK) /home/NSNCYF]</div><div class="line"><span class="comment"># ngtrace -f 8615835778251</span></div><div class="line">IMSI = 460021357329236</div><div class="line">MSISDN = 8615835778251</div><div class="line">IMEISV = 8666150215262300</div><div class="line">S11 remote endpoint = [S11 MME GTP-C, IPV4=117.142.43.12 VRF=2, id=0x90160917]</div><div class="line">S4 remote endpoint = [0, IPv4=0.0.0.0, id=0x00000000]</div><div class="line">+-</div><div class="line">|Session:</div><div class="line">+-</div><div class="line">| role = S-GW</div><div class="line">| node = AS12-1</div><div class="line">| assigned IP address = IPV4=3.0.96.22</div><div class="line">| RAT <span class="built_in">type</span> = E UTRAN</div><div class="line">| APN = temp01.sx.mnc002.mcc460.gprs</div><div class="line">| S-GW profile name = sgw-profile</div><div class="line">.</div><div class="line">.</div><div class="line">.</div></pre></td></tr></table></figure>
@@ -393,6 +389,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
 
       
       
@@ -411,6 +413,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/10/awk-2017070/" rel="prev" title="被遗忘的AWK，从入门到放弃">
+                被遗忘的AWK，从入门到放弃 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -482,7 +488,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -493,7 +499,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -504,7 +510,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -515,6 +521,26 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Damaomiao" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/3488715563" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
           
         </div>
 

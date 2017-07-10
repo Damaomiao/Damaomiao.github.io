@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="awk," />
 
 
 
@@ -94,15 +94,17 @@
 
 
 
-<meta name="description" content="大道至简">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mr.ShenHua">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="关于AWK不得不说的话 什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里为什么不多学点。有种少壮不努力，老大徒伤悲的懊恼。  入职后第一个项目就是在某运营商处理的用户话单，">
+<meta name="keywords" content="awk">
+<meta property="og:type" content="article">
+<meta property="og:title" content="被遗忘的AWK，从入门到放弃">
+<meta property="og:url" content="http://yoursite.com/2017/07/10/awk-2017070/index.html">
 <meta property="og:site_name" content="Mr.ShenHua">
-<meta property="og:description" content="大道至简">
+<meta property="og:description" content="关于AWK不得不说的话 什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里为什么不多学点。有种少壮不努力，老大徒伤悲的懊恼。  入职后第一个项目就是在某运营商处理的用户话单，">
+<meta property="og:updated_time" content="2017-07-10T12:18:40.089Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mr.ShenHua">
-<meta name="twitter:description" content="大道至简">
+<meta name="twitter:title" content="被遗忘的AWK，从入门到放弃">
+<meta name="twitter:description" content="关于AWK不得不说的话 什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里为什么不多学点。有种少壮不努力，老大徒伤悲的懊恼。  入职后第一个项目就是在某运营商处理的用户话单，">
 
 
 
@@ -130,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/10/awk-2017070/"/>
 
 
 
 
 
-  <title>Mr.ShenHua</title>
+  <title>被遗忘的AWK，从入门到放弃 | Mr.ShenHua</title>
   
 
 
@@ -161,9 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -256,9 +256,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -284,9 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/10/awk-2017070/" itemprop="url">被遗忘的AWK，从入门到放弃</a></h1>
+          <h1 class="post-title" itemprop="name headline">被遗忘的AWK，从入门到放弃</h1>
         
 
         <div class="post-meta">
@@ -355,313 +353,103 @@
       
 
       
+        <h3 id="关于AWK不得不说的话"><a href="#关于AWK不得不说的话" class="headerlink" title="关于AWK不得不说的话"></a>关于AWK不得不说的话</h3><ul>
+<li><p>什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里为什么不多学点。有种少壮不努力，老大徒伤悲的懊恼。</p>
+</li>
+<li><p>入职后第一个项目就是在某运营商处理的用户话单，大致就是上百G的txt文件，里面有成千上万的用户上网的信息和流量信息。然后在里面找到你需要的字段并处理。反正那半年给我的记忆都是话单字段。那也是我第一次接触awk。</p>
+</li>
+</ul>
+<hr>
+<h3 id="强大的AWK"><a href="#强大的AWK" class="headerlink" title="强大的AWK"></a>强大的AWK</h3><ul>
+<li><p>在很多人眼里，awk只是属于shell的一种方法。在我看来awk则是一门独立的编程语言，为什么？举个最简单的例子，shell和awk的for循环的语法就不一样，既然语法都不一样，那么怎么可以说他们是一类编程语言。shell说到底就是linux的命令集，所以awk是独立的。</p>
+</li>
+<li><p>awk好比一把锋利的手术刀，将无比庞大文本信息解剖成一个个我们想要的字符，然后再讲这些字符变成我们想要的形式，或排序，或组合，总之你想要什么它就能变成什么。</p>
+</li>
+</ul>
+<hr>
+<h3 id="给你想要的一切"><a href="#给你想要的一切" class="headerlink" title="给你想要的一切"></a>给你想要的一切</h3><ul>
+<li><p>其实awk并不是单独出现，她最忠诚的伴侣当然是正则表达式，他们的默认让所有的情侣艳羡。正则能表达你想要什么，而awk则去寻找你想要的东西。话不多说，列一段简单的代码。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">java -jar /home/cmd/tools/findcdr_EPC/epcdeccm.jar $file |  awk 'BEGIN &#123;i=1&#125;</div><div class="line">  &#123; </div><div class="line">      if ($1~/servedIMSI/)&#123;</div><div class="line">        servedIMSI=$3;ServedIMSI[i]=servedIMSI</div><div class="line">      &#125;</div><div class="line">      else if ($1~/chargingID/)&#123;</div><div class="line">        chargingID=$3;ChargingID[i]=chargingID;</div><div class="line">      &#125;</div><div class="line">      else if ($1~/accessPointName/)&#123;</div><div class="line">        accessPointName=$3;AccessPointName[i]=accessPointName</div><div class="line">      &#125;</div><div class="line">      else if ($1~/----&gt;iPBinV4Address/)&#123;</div><div class="line">        iPBinV4Address=$3;IPBinV4Address[i]=iPBinV4Address</div><div class="line">      &#125;</div><div class="line">      </div><div class="line">            else if ($1~/consolidationResult/)&#123;</div><div class="line">        i=i+1;</div><div class="line">        n=1</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">   END&#123;</div><div class="line">         for(a=1;a&lt;i;a++)</div><div class="line">            for (x=1;x&lt;b[a];x++)&#123;</div><div class="line">            print ServedIMSI[a]","ServedIMEISV[a]","ChargingID[a]","IPBinV4Adress[a]"</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">      &#125;' | sed 's/0x//g'  | awk -F, '&#123;</div><div class="line">                    print substr($2,2,1)</div><div class="line">          &#125;'  &gt; $file.csv</div></pre></td></tr></table></figure>
+</li>
+<li><p>一目了然，可以找到我们能表达出来的一切，当然配上sed，grep更好用哦。</p>
+</li>
+</ul>
+<hr>
+<h3 id="被遗忘的AWK"><a href="#被遗忘的AWK" class="headerlink" title="被遗忘的AWK"></a>被遗忘的AWK</h3><ul>
+<li>可能是由于awk本身的局限性，它貌似只擅长与文本处理。所以在生产环境中，当我们分析log或处理文本的时候，大多数人都选用python或perl。在我看来，用python一遍一遍敲着split，strip，一遍一遍读取文本，一个又一个的for循环，我还是喜欢awk。当然据说perl这方面也十分强大，不过我在看教程的时候感觉语法比较繁琐，还没入门就放弃了，哈哈。</li>
+<li><p>关于awk知道两点，一是逐行处理，二是</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">awk '&#123;pattern + action&#125;' ，其他细节网上到处都是教程</div></pre></td></tr></table></figure>
+</li>
+<li><p>awk很好用，当我们大量处理文本的时候，可以考虑去尝试尝试。你用或者不用，她都站在那里，亭亭玉立。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
         
-          
-          关于AWK不得不说的话
-什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/10/awk-2017070/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/07/ngtrace/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hot_hot_miao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang_.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mr.ShenHua">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/07/ngtrace/" itemprop="url">ngtrace的使用说明</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-07T11:14:15+08:00">
-                2017-07-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/awk/" rel="tag"># awk</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          前言：1、ngtrace是利用现在非常流行的编程语言Python实现的。2、选择python的原因是因为所有的Unix/Linux服务器或主机都默认安装了python。可以直接使用python，而不需要安装其它的编译环境。3、ngtrace的具体功能是和老曹商量后，决定实现哪些功能，这些功能可能会比
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/07/ngtrace/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/07/ngtrace/" rel="next" title="ngtrace的使用说明">
+                <i class="fa fa-chevron-left"></i> ngtrace的使用说明
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/30/test-blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hot_hot_miao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang_.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mr.ShenHua">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/30/test-blog/" itemprop="url">测试blog</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-30T16:16:58+08:00">
-                2017-06-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          这是一篇测试blog，看看中不中？
-决定不删了，留作纪念！
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/30/test-blog/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -669,6 +457,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -688,8 +480,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/touxiang_.png"
@@ -771,6 +572,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于AWK不得不说的话"><span class="nav-number">1.</span> <span class="nav-text">关于AWK不得不说的话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强大的AWK"><span class="nav-number">2.</span> <span class="nav-text">强大的AWK</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给你想要的一切"><span class="nav-number">3.</span> <span class="nav-text">给你想要的一切</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#被遗忘的AWK"><span class="nav-number">4.</span> <span class="nav-text">被遗忘的AWK</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -894,10 +711,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
