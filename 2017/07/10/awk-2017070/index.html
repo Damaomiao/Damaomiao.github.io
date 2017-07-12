@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="awk," />
+  <meta name="keywords" content="awk,shell," />
 
 
 
@@ -95,13 +95,13 @@
 
 
 <meta name="description" content="关于AWK不得不说的话 什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里为什么不多学点。有种少壮不努力，老大徒伤悲的懊恼。直到我认识到什么是awk，夸张点说，她帮助我走出了">
-<meta name="keywords" content="awk">
+<meta name="keywords" content="awk,shell">
 <meta property="og:type" content="article">
 <meta property="og:title" content="被遗忘的AWK，从入门到放弃">
 <meta property="og:url" content="http://yoursite.com/2017/07/10/awk-2017070/index.html">
 <meta property="og:site_name" content="Mr.ShenHua">
 <meta property="og:description" content="关于AWK不得不说的话 什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里为什么不多学点。有种少壮不努力，老大徒伤悲的懊恼。直到我认识到什么是awk，夸张点说，她帮助我走出了">
-<meta property="og:updated_time" content="2017-07-10T15:50:53.315Z">
+<meta property="og:updated_time" content="2017-07-12T08:24:46.706Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="被遗忘的AWK，从入门到放弃">
 <meta name="twitter:description" content="关于AWK不得不说的话 什么是awk，awk是一种处理文本的编程语言工具。它之所以叫awk，是因为它的三个创造者名字的首字母分别是A,W,K。谈起我和awk的渊源，应该要回到2015年的那个夏天，和大多数应届毕业生一样，稀里糊涂的走进公司，面对着全新的世界，什么都不会。脑海里一直痛骂自己当初在学校里为什么不多学点。有种少壮不努力，老大徒伤悲的懊恼。直到我认识到什么是awk，夸张点说，她帮助我走出了">
@@ -215,6 +215,16 @@
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -342,7 +352,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数 </span>
+                 <span class="post-meta-item-text">热度 </span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -425,6 +435,8 @@
           
             <a href="/tags/awk/" rel="tag"># awk</a>
           
+            <a href="/tags/shell/" rel="tag"># shell</a>
+          
         </div>
       
 
@@ -445,6 +457,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/12/zhiding-0712/" rel="prev" title="写在最前面">
+                写在最前面 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -516,7 +532,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -538,7 +554,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -777,7 +793,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("", "");</script>
+  <script>AV.initialize("fXPuIFbdBwxLkVsonVo3ISQn-gzGzoHsz", "VbuuSEsljdUknG6L1GVwLIhk");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
@@ -794,7 +810,7 @@
           var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
 
           if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            $visitors.find(COUNT_CONTAINER_REF).text(0+"°C");
             return;
           }
 
@@ -804,14 +820,14 @@
             var time = item.get('time');
             var element = document.getElementById(url);
 
-            $(element).find(COUNT_CONTAINER_REF).text(time);
+            $(element).find(COUNT_CONTAINER_REF).text(time+"°C");
           }
           for(var i = 0; i < entries.length; i++) {
             var url = entries[i];
             var element = document.getElementById(url);
             var countSpan = $(element).find(COUNT_CONTAINER_REF);
             if( countSpan.text() == '') {
-              countSpan.text(0);
+              countSpan.text(0+"°C");
             }
           }
         })
@@ -836,7 +852,7 @@
             counter.save(null, {
               success: function(counter) {
                 var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                $element.find('.leancloud-visitors-count').text(counter.get('time')+"°C");
               },
               error: function(counter, error) {
                 console.log('Failed to save Visitor num, with error message: ' + error.message);
@@ -856,7 +872,7 @@
             newcounter.save(null, {
               success: function(newcounter) {
                 var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time')+"°C");
               },
               error: function(newcounter, error) {
                 console.log('Failed to create');
